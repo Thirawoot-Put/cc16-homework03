@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700;800&display=swap');
+
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Global setting  */
+body {
+    margin: auto;
+    background-color: whitesmoke;
+    width: 1200px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    min-height: 40px;
+    padding: 0 100px;
+}
+
+.job-passcard img {
+    width: 16px;
+}
+
+span {
+    font-weight: 700;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    gap: 36px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.right-nav {
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.incart {
+    display: flex;
+    position: relative;
+}
+
+.noti {
+    background-color: red;
+    border-radius: 100%;
+    text-align: center;
+    width: 12px;
+    font-size: 0.5rem;
+    position: absolute;
+    right: -8px;
+    top: -8px;
+    color: whitesmoke;
+    border: none;
+}
+
+/* main */
+main {
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 100px;
+    min-height: 30px;
+    gap: 20px;
+}
+
+.mycart {
+    margin-top: 80px;
+}
+
+.cart {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.cart>* {
+    flex-basis: 100%;
+}
+
+.order-check {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* main--card */
+.card {
+    background-color: white;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.delete {
+    color: rgb(44, 193, 160);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(44, 193, 160);
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    padding: 16px;
+}
+
+.gg-doc,.gg-slide p {
+    font-weight: 200;
+}
+
+.gg-doc {
+    background-image: linear-gradient(0deg, rgba(79, 164, 249, 1) 0%, rgba(148, 203, 255, 1) 61%);
+    border-radius: 16px;
+    min-height: 150px;
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    padding: 16px;
+    font-size: 0.8rem;
+    gap: 4px;
+}
+
+.gg-slide {
+    background-image: linear-gradient(0deg, rgba(255, 144, 75, 1) 0%, rgba(255, 199, 140, 1) 61%);
+    border-radius: 16px;
+    min-height: 150px;
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    padding: 16px;
+    font-size: 0.8rem;
+    gap: 4px;
+}
+
+.card img {
+    width: 25px;
+    background-color: white;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100px;
+}
+
+h4 {
+    font-weight: 500;
+}
+
+.choose-lv {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+.dots,
+.dots2 {
+    display: flex;
+    gap: 4px;
+}
+
+.dots>* {
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background-color: rgb(235, 235, 235);
+}
+
+.dots>:first-child {
+    background-color: rgb(52, 216, 181);
+}
+
+.dots2>* {
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background-color: rgb(52, 216, 181);
+}
+
+.dots2>:last-child {
+    background-color: rgb(235, 235, 235);
+}
+
+#lv {
+    color: rgb(142, 142, 142);
+    border: none;
+}
+
+.detail>p {
+    color: rgb(100, 100, 100);
+}
+
+/* order info */
+
+.order-info {
+    padding: 30px;
+    background-color: white;
+    border-radius: 16px;
+    height: 350px;
+}
+
+.subtotal {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(142, 142, 142);
+    padding: 20px 0;
+}
+
+.subtotal>:last-child {
+    color: rgb(100, 100, 100);
+}
+
+.promotion {
+    display: flex;
+    align-items: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid whitesmoke;
+    gap: 12px;
+}
+
+.promotion input {
+    flex-grow: 2;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 4px;
+    padding: 8px 16px;
+}
+
+.promotion button {
+    flex-grow: 1;
+    padding: 8px 16px;
+    color: rgb(52, 216, 181);
+    border: 1px solid rgb(52, 216, 181);
+    border-radius: 12px;
+    background-color: white;
+    font-weight: 700;
+}
+
+.promotion>img {
+    width: 28px;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.total p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(52, 216, 181);
+}
+
+.order-info>input {
+    background-color: rgb(52, 216, 181);
+    width: 100%;
+    min-height: 40px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0px 8px 45px -2px rgba(52,216,181,0.64);
+    -webkit-box-shadow: 0px 8px 45px -2px rgba(52,216,181,0.64);
+    -moz-box-shadow: 0px 8px 45px -2px rgba(52,216,181,0.64);
+    font-weight: 700;
+}
